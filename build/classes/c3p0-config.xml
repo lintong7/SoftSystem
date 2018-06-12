@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<!-- <default-config>
+		默认配置，如果没有指定则使用这个配置	
+	</default-config> -->
+	<!-- 指定配置名 -->
+	<named-config name="mysql">
+		<!-- 配置用户名 密码 链接 驱动 -->
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/soft?useUnicode=true&amp;
+		characterEncoding=utf8&amp;useSSL=false</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<!-- 数据库连接池一次向数据库服务器要多少个链接 -->
+		<property name="acquireIncrement">5</property>
+		<!-- 初始化链接数 -->
+		<property name="initiaPoolSize">10</property>
+		<!-- 最小连接数 -->
+		<property name="minPoolSize">10</property>
+		<!--最大连接数 -->
+		<property name="maxPoolSize">20</property>
+		<!--数据库连接池能维护最多的statement 的数是 -->
+		<property name="maxStatements">50</property>
+		<!-- 每个数据库链接可以创建多少个statement -->
+		<property name="maxStatementsPerConnection">10</property>
+	</named-config>
+</c3p0-config>
+

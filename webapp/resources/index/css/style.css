@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+html, body {
+	overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+.table-bordered{border-radius:4px;}
+footer {
+	padding: 20px 0;
+}
+a{
+    cursor:pointer;
+}
+hr{
+	margin:15px 0!important;
+}
+.ml5{
+	margin-left:5px;
+}
+.mt15{
+	margin-top:15px;
+}
+.pb5{
+	padding-bottom:5px;
+}
+.back_to_top{  
+	width:50px;
+	height:40px;
+	color:#fff;
+	text-align:center;
+	line-height:40px;
+	background-color:#999;
+	border-radius: 10px;
+    position:fixed;
+    bottom:15px;
+    right:12px;
+    padding:0;
+    border:0;
+}
+.back_to_top:hover{
+	color:#fff;
+	text-decoration:none;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all .25s ease-out;
+		-o-transition: all .25s ease-out;
+		transition: all .25s ease-out;
+	}
+	.row-offcanvas-right {
+		right: 0;
+	}
+	.row-offcanvas-left {
+		left: 0;
+	}
+	.row-offcanvas-right
+  .sidebar-offcanvas {
+		right: -50%; /* 6 columns */
+	}
+	.row-offcanvas-left
+  .sidebar-offcanvas {
+		left: -50%; /* 6 columns */
+	}
+	.row-offcanvas-right.active {
+		right: 50%; /* 6 columns */
+	}
+	.row-offcanvas-left.active {
+		left: 50%; /* 6 columns */
+	}
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 50%; /* 6 columns */
+	}
+}
+
+/*
+ * Index
+ * --------------------------------------------------
+ */
+.top>a {
+	display: block;
+	width: 180px;
+	height: 75px;
+	text-indent: -9999px;
+	background-image: url("../images/logo.png");
+}
+
+.search {
+	padding-top: 15px;
+}
+
+.search>.input-group {
+	height: 35px;
+	line-height: 35px;
+}
+
+.search>.keywords>a {
+	margin: 0 3px;
+}
+
+.catalog-class tr td {
+	padding: 3px !important;
+}
+
+.catalog-class tr>.catalog-title {
+	font-size: 14px;
+	width: 75px;
+}
+
+.catalog-class tr>.catalog-title>a {
+	border-right: 1px solid #337ab7;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.catalog-class tr>.catalog-title>a:hover {
+	background: #288bde;
+}
+.catalog-class tr>.catalog-list{
+	overflow: hidden;
+}
+.catalog-class tr>.catalog-list>a {
+	font-size: 14px;
+	padding: 0 11px;
+	border-right: 1px solid #ccc;
+	white-space: nowrap;
+}
+.index-class > .col-xs-12{
+	margin:20px 0;
+}
+.index-title{
+	border-bottom: 2px solid #288bde;
+}
+.list-title{
+	height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #008ee1;
+}
+.list-title h4{
+	font-size: 18px;
+	font-weight:bold;
+}
+.list-title div{
+	text-align:right;
+}
+.list-menu{
+	padding-left:0px!important;	
+}
+.list-menu > .col-md-2{
+	margin-top:10px!important;
+	text-align:center;
+	overflow:hidden;
+	text-overflow:ellipsis;/* 超出显示... */
+}
+.list-menu img{
+	/* background: #ffaa01; */
+	width:80px;
+	height:80px;
+	margin-bottom:4px;
+	border-radius:6px;
+}
+.list-menu span{
+	width:70px;
+	text-align:center;
+    white-space:nowrap;/* 文本不换行 */
+}
+/*
+ * Detail
+ * --------------------------------------------------
+ */
+.detail-title{
+	width:100%;
+	height:81px;
+	line-height:65px;
+    font-size:24px;
+	padding:8px;
+	border:1px solid #008ee1;
+    border-radius: 4px;
+}
+.detail-title a{
+	width:65px;
+	height:65px;
+}
+.detail-title a img{
+	width:65px;
+	height:65px;
+}
+.detail-title strong{
+	margin-left:8px;
+}
+.detail-title > span{
+	
+}
+.detail-title > .download{
+	color:#fff;
+	width:150px;
+	height:40px;
+	margin-left:20px;
+	padding:5px;
+	text-align:center;
+	line-height:40px;
+	text-decoration:none;
+	background-color:#ffaa01;
+	border-radius: 4px;
+}
+
+.detail-parameter{
+	margin:15px 0;
+}
+.detail-parameter > .col-sm-9{
+	padding-left:0px;
+}
+.detail-parameter > .col-sm-9 > .col-xs-12 > .col-md-4{
+	margin-top:5px!important;
+}
+.detail-parameter > .col-sm-3{
+	padding:0px;
+}
+/*
+ * Class
+ * --------------------------------------------------
+ */
+.soft-class > .catalog-class > tbody > tr{
+	height:40px!important;
+    font-size:15px!important;
+}
+.soft-class > .catalog-class > tbody > tr > td{
+    line-height:40px;	
+}
+/*
+ * Error 404
+ * --------------------------------------------------
+ */
+.error{
+	min-height:400px;
+	padding:150px 25%;
+    text-align: center;
+}
+.error strong{
+	font-size:36px;
+}
+.error > p > a{
+	margin:10px 30px;
+    color: #fff;
+    background-color: #ffaa01;
+}
+.error > p > a:hover{
+	color:#fff;
+}
+/*
+ * Necessary Top New
+ * --------------------------------------------------
+ */
+ .mh400{
+ 	min-height:400px;
+ }
+ .commons{
+ 	
+ }
+.commons-title h2{
+	padding-left:5px;
+	border-left:5px solid #ffaa01;
+}
+.commons > .col-md-2 > a > p{
+	margin:0px;
+}
